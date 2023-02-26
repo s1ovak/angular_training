@@ -1,0 +1,10 @@
+<div>
+  <h4>Check out our featured products</h4>
+</div>
+<div class="grid-container">
+  <app-product-list *ngFor="let category of featuredCategories"
+                    [category]="category.name"
+                    [featured]="true"
+                    [limit]="2">
+  </app-product-list>
+</div>
